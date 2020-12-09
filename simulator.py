@@ -15,7 +15,7 @@
 
 '''
 This file contains the simulator code for simulating the Round of 16 in the
-UEFA Champions League for the 2018-2019 season.
+UEFA Champions League for the 2019-2020 season.
 '''
 
 from collections import defaultdict
@@ -23,23 +23,23 @@ import copy
 import random
 
 group_winners = [
-    ("A", "FRA", "Paris"),
-    ("B", "GER", "Bayern"),
-    ("C", "ENG", "Man City"),
+    ("A", "FRA", "PSG"),
+    ("B", "GER", "Bayern Munich"),
+    ("C", "ENG", "Manchester City"),
     ("D", "ITA", "Juventus"),
     ("E", "ENG", "Liverpool"),
-    ("F", "SPA", "Barcelona"),
+    ("F", "ESP", "FC Barcelona"),
     ("G", "GER", "Leipzig"),
-    ("H", "SPA", "Valencia")
+    ("H", "ESP", "Valencia")
 ]
 
 group_runners = [
-    ("A", "SPA", "Real Madrid"),
-    ("B", "ENG", "Tottenham"),
-    ("C", "UKR", "Donezk"),
-    ("D", "SPA", "Atletico"),
-    ("E", "ITA", "Neapel"),
-    ("F", "GER", "Dortmund"),
+    ("A", "ESP", "Real Madrid"),
+    ("B", "ENG", "Tottenham Hotspur"),
+    ("C", "ITA", "Atalanta"),
+    ("D", "ESP", "Atlético Madrid"),
+    ("E", "ITA", "Napoli"),
+    ("F", "GER", "Borussia Dortmund"),
     ("G", "FRA", "Lyon"),
     ("H", "ENG", "Chelsea")
 ]
