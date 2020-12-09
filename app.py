@@ -29,13 +29,13 @@ app.secret_key = os.urandom(24)
 def index():
     if request.method == "POST":
         try:
-            # Number of simulations
+            # Anzahl der Simulationen
             n = int(escape(request.form["simulations"]))
 
             if n > 1000000:
-                flash("Error: 1,000,000 is the maximum number of simulations.")
+                flash("Fehler: 1.000.000 ist die maximale Anzahl der Simulationen")
             elif n < 1:
-                flash("Error: Number must be greater than zero.")
+                flash("Fehler: Anzahl müss größer als Null sein.")
             else:
                 start = time.perf_counter()
                 draws, gw, gr = simulator.execute_simulation(n)
@@ -49,7 +49,7 @@ def index():
                     runners_up=gr)
         except Exception as e:
             print(e)
-            flash("Error: Tricky tricky, only numbers are accepted here.")
+            flash("Fehler: bitte nur Nummern eingeben.")
     # else:
 
     return render_template("form.html")
@@ -64,7 +64,7 @@ def count():
         return render_template("count.html", count=count, time=end - start)
     except Exception as e:
         print(e)
-        flash("Error: Something happened while counting all possibilities, try again.")
+        flash("Fehler: etwas ging schief beim berechnen der Möglichkeiten, versuche es noch einmal.")
 
     return redirect("/")
 
