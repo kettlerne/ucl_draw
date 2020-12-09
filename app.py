@@ -32,10 +32,10 @@ def index():
             # Anzahl der Simulationen
             n = int(escape(request.form["simulations"]))
 
-            if n > 1000000:
-                flash("Fehler: 1.000.000 ist die maximale Anzahl der Simulationen")
+            if n > 10000000:
+                flash("Fehler: 10.000.000 ist die maximale Anzahl der Simulationen")
             elif n < 1:
-                flash("Fehler: Anzahl müss größer als Null sein.")
+                flash("Fehler: Anzahl muss größer als Null sein.")
             else:
                 start = time.perf_counter()
                 draws, gw, gr = simulator.execute_simulation(n)
