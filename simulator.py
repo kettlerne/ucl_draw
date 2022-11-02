@@ -30,7 +30,7 @@ group_winners = [
     ("E", "ENG", "Chelsea"),
     ("F", "ESP", "Real"),
     ("G", "ENG", "ManCity"),
-    ("H", "FRA", "PSG")
+    ("H", "POR", "Lissabon")
 ]
 
 group_runners = [
@@ -41,7 +41,7 @@ group_runners = [
     ("E", "ITA", "ACMailand"),
     ("F", "GER", "Leipzig"),
     ("G", "GER", "Dortmund"),
-    ("H", "POR", "Lissabon")
+    ("H", "FRA", "PSG")
 ]
 
 valid_draws = defaultdict(list)  # Holds all valid draws
